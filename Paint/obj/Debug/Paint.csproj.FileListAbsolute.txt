@@ -1,0 +1,16 @@
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\bin\Debug\Paint.exe.config
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\bin\Debug\Paint.exe
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\bin\Debug\Paint.pdb
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\obj\Debug\MainWindow.baml
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\obj\Debug\MainWindow.g.cs
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\obj\Debug\App.g.cs
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\obj\Debug\Paint_MarkupCompile.cache
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\obj\Debug\Paint.g.resources
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\obj\Debug\Paint.csproj.GenerateResource.Cache
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\obj\Debug\Paint.exe
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\obj\Debug\Paint.pdb
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\Paint\Paint\obj\Debug\Paint.csprojResolveAssemblyReference.cache
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\WinDev\Paint\Paint\bin\Debug\Paint.exe.config
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\WinDev\Paint\Paint\obj\Debug\Paint.exe
+D:\HocTap\Nam 3\Hoc Ki 1\Lap Trinh Win\Deadline\My_Paint\WinDev\Paint\Paint\obj\Debug\Paint.pdb

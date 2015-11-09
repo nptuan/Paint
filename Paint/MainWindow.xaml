@@ -1,0 +1,104 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Name="Paint" x:Class="Paint.MainWindow"
+        Title="Paint" Height="686.257" Width="884.012" KeyDown="Paint_KeyDown">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="555" Margin="10,90,0,0" VerticalAlignment="Top" Width="856">
+            <Canvas x:Name="MyCanvas" ClipToBounds="True" HorizontalAlignment="Left" Height="555" Width="856" Background="White" Loaded="MyCanvas_Loaded"
+                    MouseLeftButtonDown="MyCanvas_MouseLeftButtonDown" MouseMove="MyCanvas_MouseMove" MouseLeftButtonUp="MyCanvas_MouseLeftButtonUp"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="75" Margin="353,10,0,0" VerticalAlignment="Top" Width="255">
+            <Grid x:Name="gridColor" HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="255" Margin="-1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55" />
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="1" Grid.Column="0" Content="Color" FontSize="8" FontWeight="Bold" HorizontalAlignment="Center" Margin="90,0,91,0" Width="30"/>
+                <StackPanel Grid.Row="0" HorizontalAlignment="Left" Height="55" Margin="0,1,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="211">
+                    <DockPanel LastChildFill="True" Height="55" Margin="0,0,-43,0">
+                        <Button x:Name="btnColor1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="55" Background="#000000" DockPanel.Dock="Left" Click="btnColor1_Click"/>
+                        <Button x:Name="btnColor2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="55" Background="#ffffff" DockPanel.Dock="Left" Click="btnColor2_Click"/>
+                        <Button x:Name="btnMoreColor" Content="More..." Width="45" Height="55" DockPanel.Dock="Right" Click="btnMoreColor_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+                        <UniformGrid x:Name="unfgrid" Rows="3" Columns="6">
+                            <Button x:Name="btnColorBlack" Background="Black" Click="btnColor_Click" />
+                            <Button x:Name="btnColorRed" Background="Red" Click="btnColor_Click" />
+                            <Button x:Name="btnColorOrange" Background="Orange" Click="btnColor_Click" />
+                            <Button x:Name="btnColorYellow" Background="Yellow" Click="btnColor_Click" />
+                            <Button x:Name="btnColorGreen" Background="Green" Click="btnColor_Click" />
+                            <Button x:Name="btnColorBlue" Background="Blue" Click="btnColor_Click" />
+                            <Button x:Name="btnColorWhite" Background="White" Click="btnColor_Click" />
+                            <Button x:Name="btnColorMagenta" Background="Magenta" Click="btnColor_Click" />
+                            <Button x:Name="btnColorChocolate" Background="Chocolate" Click="btnColor_Click" />
+                            <Button x:Name="btnColorPurple" Background="Purple" Click="btnColor_Click" />
+                            <Button x:Name="btnColorLime" Background="Lime" Click="btnColor_Click" />
+                            <Button x:Name="btnColorDeepSkyBlue" Background="DeepSkyBlue" Click="btnColor_Click" />
+                            <Button x:Name="btnMoreColor1" Background="White" Click="btnColor_Click"/>
+                            <Button x:Name="btnMoreColor2" Background="White" Click="btnColor_Click"/>
+                            <Button x:Name="btnMoreColor3" Background="White" Click="btnColor_Click"/>
+                            <Button x:Name="btnMoreColor4" Background="White" Click="btnColor_Click"/>
+                            <Button x:Name="btnMoreColor5" Background="White" Click="btnColor_Click"/>
+                            <Button x:Name="btnMoreColor6" Background="White" Click="btnColor_Click"/>
+                        </UniformGrid>
+
+                    </DockPanel>
+                </StackPanel>
+
+            </Grid>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="75" Margin="10,10,0,0" VerticalAlignment="Top" Width="338">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="27" />
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="2" Content="Style" FontSize="8" FontWeight="Bold" HorizontalAlignment="Center" Margin="72,0,70,0" Width="33"/>
+                <Label Grid.Row="0" x:Name="lblShapes" Content="Mode" HorizontalAlignment="Left" Margin="-1,-1,0,0" VerticalAlignment="Top" Width="52" Height="29"/>
+                <ComboBox x:Name="cbbShapes" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Top" Width="115" SelectionChanged="cbbShapes_SelectionChanged" Height="22">
+                    <System:String>Line</System:String>
+                    <System:String>Ellipse</System:String>
+                    <System:String>Rectangle</System:String>
+                    <System:String>Circle</System:String>
+                    <System:String>Square</System:String>
+                    <System:String>Text Box</System:String>
+                    <System:String>Select</System:String>
+                </ComboBox>
+                <Label x:Name="lblSize" Content="Size" HorizontalAlignment="Left" Margin="-1,0,0,0" VerticalAlignment="Top" Height="26" Width="52" Grid.Row="1"/>
+                <ComboBox x:Name="cbbSize" HorizontalAlignment="Left" Margin="45,5,0,0" VerticalAlignment="Top" Width="115" SelectionChanged="cbbSize_SelectionChanged" Grid.Row="1" SelectedIndex="1">
+                    <System:UInt16>1</System:UInt16>
+                    <System:UInt16>3</System:UInt16>
+                    <System:UInt16>5</System:UInt16>
+                    <System:UInt16>8</System:UInt16>
+                    <System:UInt16>10</System:UInt16>
+                    <System:UInt16>15</System:UInt16>
+                    <System:UInt16>20</System:UInt16>
+                    <System:UInt16>30</System:UInt16>
+                </ComboBox>
+                <Label x:Name="lblFill" Content="Fill" HorizontalAlignment="Left" Margin="165,2,0,0" VerticalAlignment="Top" Height="26" Width="52"/>
+                <ComboBox x:Name="cbbFill" HorizontalAlignment="Left" Margin="217,2,0,0" VerticalAlignment="Top" Width="115" Grid.Row="0" SelectedIndex="0" SelectionChanged="cbbFill_SelectionChanged">
+                    <System:String>NoFill</System:String>
+                    <System:String>Solid</System:String>
+                    <System:String>Linear</System:String>
+                    <System:String>Radial</System:String>
+                    <System:String>Image</System:String>                   
+                </ComboBox>
+                <Label x:Name="lblOutLine" Content="OutLine" HorizontalAlignment="Left" Margin="165,1,0,0" VerticalAlignment="Top" Height="26" Width="52" Grid.Row="1"/>
+                <ComboBox x:Name="cbbOutLine" HorizontalAlignment="Left" Margin="217,5,0,0" VerticalAlignment="Top" Width="115" Grid.Row="1" SelectedIndex="0" SelectionChanged="cbbOutLine_SelectionChanged">
+                    <System:String>Solid</System:String>
+                    <System:String>Dot</System:String>
+                    <System:String>Dash</System:String>
+                    <System:String>DotDash</System:String>
+                </ComboBox>
+            </Grid>
+        </Border>
+        <Button x:Name="btnCut" Content="Cut" HorizontalAlignment="Left" Margin="613,12,0,0" VerticalAlignment="Top" Width="75" Click="btnCut_Click"/>
+        <Button x:Name="btnCopy" Content="Copy" HorizontalAlignment="Left" Margin="613,37,0,0" VerticalAlignment="Top" Width="75" Click="btnCopy_Click"/>
+        <Button x:Name="btnPaste" Content="Paste" HorizontalAlignment="Left" Margin="613,62,0,0" VerticalAlignment="Top" Width="75" Click="btnPaste_Click"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="693,37,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
+        <Button x:Name="Load" Content="Load" HorizontalAlignment="Left" Margin="693,62,0,0" VerticalAlignment="Top" Width="75" Click="Load_Click"/>
+
+        <Button x:Name="Undo" Content="Undo" HorizontalAlignment="Left" Margin="773,37,0,0" VerticalAlignment="Top" Width="75" Click="Undo_Click"/>
+        <Button x:Name="Redo" Content="Redo" HorizontalAlignment="Left" Margin="773,62,0,0" VerticalAlignment="Top" Width="75" Click="Redo_Click"/>
+    </Grid>
+</Window>
