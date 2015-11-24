@@ -366,5 +366,19 @@ namespace Paint
         {
             undoredoManager.Redo(MyCanvas);
         }
+
+        private void cbbFont_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void btnFont_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new System.Windows.Forms.FontDialog();
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                ttv.currFont = new FontFamily(dialog.Font.Name);
+            }
+        }
     }
 }

@@ -8,7 +8,7 @@
             <Canvas x:Name="MyCanvas" ClipToBounds="True" HorizontalAlignment="Left" Height="555" Width="856" Background="White" Loaded="MyCanvas_Loaded"
                     MouseLeftButtonDown="MyCanvas_MouseLeftButtonDown" MouseMove="MyCanvas_MouseMove" MouseLeftButtonUp="MyCanvas_MouseLeftButtonUp"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="75" Margin="353,10,0,0" VerticalAlignment="Top" Width="255">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="75" Margin="353,7,0,0" VerticalAlignment="Top" Width="255">
             <Grid x:Name="gridColor" HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="255" Margin="-1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="55" />
@@ -46,7 +46,7 @@
 
             </Grid>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="75" Margin="10,10,0,0" VerticalAlignment="Top" Width="338">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="75" Margin="10,7,0,0" VerticalAlignment="Top" Width="338">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="28" />
@@ -66,14 +66,14 @@
                 </ComboBox>
                 <Label x:Name="lblSize" Content="Size" HorizontalAlignment="Left" Margin="-1,0,0,0" VerticalAlignment="Top" Height="26" Width="52" Grid.Row="1"/>
                 <ComboBox x:Name="cbbSize" HorizontalAlignment="Left" Margin="45,5,0,0" VerticalAlignment="Top" Width="115" SelectionChanged="cbbSize_SelectionChanged" Grid.Row="1" SelectedIndex="1">
-                    <System:UInt16>1</System:UInt16>
                     <System:UInt16>3</System:UInt16>
                     <System:UInt16>5</System:UInt16>
-                    <System:UInt16>8</System:UInt16>
                     <System:UInt16>10</System:UInt16>
-                    <System:UInt16>15</System:UInt16>
                     <System:UInt16>20</System:UInt16>
                     <System:UInt16>30</System:UInt16>
+                    <System:UInt16>40</System:UInt16>
+                    <System:UInt16>50</System:UInt16>
+                    <System:UInt16>80</System:UInt16>
                 </ComboBox>
                 <Label x:Name="lblFill" Content="Fill" HorizontalAlignment="Left" Margin="165,2,0,0" VerticalAlignment="Top" Height="26" Width="52"/>
                 <ComboBox x:Name="cbbFill" HorizontalAlignment="Left" Margin="217,2,0,0" VerticalAlignment="Top" Width="115" Grid.Row="0" SelectedIndex="0" SelectionChanged="cbbFill_SelectionChanged">
@@ -100,5 +100,6 @@
 
         <Button x:Name="Undo" Content="Undo" HorizontalAlignment="Left" Margin="773,37,0,0" VerticalAlignment="Top" Width="75" Click="Undo_Click"/>
         <Button x:Name="Redo" Content="Redo" HorizontalAlignment="Left" Margin="773,62,0,0" VerticalAlignment="Top" Width="75" Click="Redo_Click"/>
+        <Button x:Name="btnFont" Content="Font" HorizontalAlignment="Left" Margin="693,12,0,0" VerticalAlignment="Top" Width="75" Click="btnFont_Click"/>
     </Grid>
 </Window>

@@ -43,6 +43,7 @@ namespace Paint
                     Width = currTextBox.Width,
                     Height = currTextBox.Height,
                     Text = currTextBox.Text,
+                    FontFamily = thuocTinhVe.currFont,
                     Foreground = currTextBox.Foreground,
                     Background = currTextBox.Background,
                     RenderTransformOrigin = new Point(0.5, 0.5),
@@ -105,6 +106,7 @@ namespace Paint
                     Height = selectRectangle.Height,
                     Foreground = thuocTinhVe.ColorOutLineBrush,
                     FontSize = thuocTinhVe.currSize,
+                    FontFamily = thuocTinhVe.currFont,
                     //Background = currTextBox.Background,
                     Background = thuocTinhVe.ColorFillBrush
                 };                

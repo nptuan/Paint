@@ -15,7 +15,7 @@ namespace Paint
         public bool selectedButtonColor1 = true;
         public Brush ColorOutLineBrush = Brushes.Black;
         public Brush ColorFillBrush = Brushes.White;
-
+        public FontFamily currFont = new FontFamily("Arial");
         public Brush getFillBrush()
         {
             Color cl1 = ((System.Windows.Media.SolidColorBrush)(ColorOutLineBrush)).Color;
